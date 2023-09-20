@@ -1,0 +1,31 @@
+.categories-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.categories-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.category {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category img {
+  width: 100px; /* Adjust the image size as needed */
+  height: 100px; /* Adjust the image size as needed */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.category-name {
+  margin-top: 5px;
+}

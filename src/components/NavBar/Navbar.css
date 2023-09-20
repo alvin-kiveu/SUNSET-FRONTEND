@@ -1,0 +1,283 @@
+/* THEME COLOR */
+:root {
+  --primary-color-one: #FE7901;
+  --primary-color-two: #FCDE03;
+  --primary-color-three: #695C3E;
+  --primary-color-four: #010100;
+  --primary-color-five: #FFFFFF;
+}
+
+/* Navbar Container */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color-five);
+  /* Use primary color five as the background */
+  height: 60px;
+  padding: 0 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: sticky;
+}
+
+/* Logo */
+.nav .logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Navigation Links */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-color-four);
+  /* Use primary color one for link text */
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color-five);
+  min-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 40%;
+}
+
+.dropdown:hover .dropdown-content a {
+  color: var(--primary-color-two);
+
+
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+
+}
+
+.dropdown-content a {
+  color: var(--primary-color-two);
+  /* Use primary color two for dropdown links */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100% !important;
+
+}
+
+/* Search Input */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 233);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search input {
+  border: 0px;
+  margin: 0px;
+  display: flex;
+  width: 350px;
+  border-radius: 4px;
+  background-color: rgb(233, 233, 233);
+  color: rgb(36, 40, 47);
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 10px;
+  outline: none;
+}
+
+/* Style for the search icon */
+.search .search-icon {
+  color: var(--primary-color-four);
+  /* Set the icon color */
+  font-size: 20px;
+  /* Adjust the icon size */
+  margin-right: 10px;
+  /* Add spacing between the icon and input */
+}
+
+
+.accountliinks a {
+  text-decoration: none;
+  color: var(--primary-color-four);
+}
+
+.accountliinks a:hover {
+  text-decoration: underline;
+  color: var(--primary-color-one);
+}
+
+/* Sign In and Create Account */
+.nav-links .sign-in,
+.nav-links .create-account {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Cart Icon */
+/* Cart Icon */
+.cart a {
+  text-decoration: none;
+  background-color: var(--primary-color-two);
+  color: var(--primary-color-four);
+  font-weight: bold;
+  padding: 5px 30px 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+  /* Add a smooth transition effect */
+}
+
+.cart i {
+  margin-right: 10px;
+}
+
+.cart span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+/* Change the cart icon color on hover */
+.cart a:hover {
+  color: var(--primary-color-one);
+  background-color: var(--primary-color-four);
+}
+
+.menu-toggle {
+  display: none;
+  /* Show the menu icon on small screens */
+}
+
+.menu-search-cart {
+  display: none;
+}
+
+/* Add responsive styles for Navbar */
+@media screen and (max-width: 768px) {
+  .nav {
+    height: 60px;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    /* Show the menu icon on small screens */
+  }
+
+  .accountliinks {
+    display: none;
+  }
+
+  .cart a {
+    text-decoration: none;
+    background-color: none !important;
+  }
+
+  /* Style for the bar icon (hamburger menu) */
+  .bar-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Adjust search input width for smaller screens */
+  .search {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  /* Cart and Search icons */
+  .cart-icon,
+  .search-icon {
+    font-size: 12px;
+    margin: 0 10px;
+    /* Add spacing between icons */
+    color: var(--primary-color-four);
+  }
+
+  /* Style the navigation links */
+
+  .menu-search-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .search-mobile .search-icon {
+    font-size: 18px;
+  }
+
+  .search-mobile .search-icon:hover {
+    color: var(--primary-color-one);
+  }
+
+  .cart-mobile i {
+    color: var(--primary-color-four);
+  }
+
+  /* Navigation Links */
+  .nav-links{
+    background-color: var(--primary-color-five);
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    z-index: 5;
+    top: 60px;
+    left: 0;
+    padding: 0;
+    height: 100vh;
+    display: none;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  
+  .nav-links ul {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0; 
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+    border-bottom: 0.5px solid var(--primary-color-four);
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--primary-color-four);
+    font-weight: bold;
+  }
+
+}

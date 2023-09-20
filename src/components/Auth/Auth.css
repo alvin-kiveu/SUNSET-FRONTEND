@@ -1,0 +1,61 @@
+/* THEME COLOR */
+:root {
+  --primary-color-one: #FE7901;
+  --primary-color-two: #FCDE03;
+  --primary-color-three: #695C3E;
+  --primary-color-four: #010100;
+  --primary-color-five: #FFFFFF;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 10%;
+}
+
+/* Add some spacing between form elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Style the form heading */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Style the submit button */
+.btn-primary {
+  background-color: var(--primary-color-one);
+  border-color: var(--primary-color-two);
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  /* Change the button color on hover */
+}
+
+/* Customize the form input fields */
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Customize the form text color and size */
+.form-text {
+  font-size: 14px;
+  color: #000000;
+}
+
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}

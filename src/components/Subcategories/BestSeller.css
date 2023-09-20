@@ -1,0 +1,82 @@
+.sub-category-container {
+  margin: 20px;
+}
+
+
+.sub-category {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.sub-category:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style for the image */
+/* Style for the image container */
+.sub-category-image-container {
+  width: 200px; /* Set a fixed width for consistency */
+  height: 200px; /* Set a fixed height for consistency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflowing content */
+  border-radius: 10px; /* Apply border-radius to the image container */
+}
+
+.sub-category-image {
+  max-width: 100%;
+  max-height: 100%; /* Ensure the image fits within the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+
+/* Style for the name */
+.sub-category-name {
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/* Style for the rate */
+.sub-category-rate {
+  color: #FE7901;
+  font-weight: 600;
+}
+
+/* Style for the reviews */
+.sub-category-reviews {
+  color: #999;
+}
+
+/* Style for the price */
+.sub-category-price {
+  margin-top: 5px;
+  color: #000000;
+  text-align: left;
+}
+
+.sub-category-header {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: left;
+}
+
+
+
+.sub-category-social {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+

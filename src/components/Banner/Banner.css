@@ -1,0 +1,47 @@
+:root {
+  --primary-color-one: #FE7901;
+  --primary-color-two: #FCDE03;
+  --primary-color-three: #695C3E;
+  --primary-color-four: #010100;
+  --primary-color-five: #FFFFFF;
+  --banner-color: #28cff8;
+}
+.banner {
+  height: auto;
+  background-color: transparent;
+  width: 100%;
+
+}
+
+
+.banner h1{
+    color: var(--primary-color-four) !important;
+}
+
+.banner p{
+    color: var(--primary-color-four) !important;
+ 
+}
+
+.banner img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.banner input{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.banner button{
+    background-color: var(--primary-color-two) !important;
+    color: var(--primary-color-four) !important;
+}
+
+.banner button:hover{
+    background-color: var(--primary-color-four) !important;
+    color: var(--primary-color-one) !important;
+}
+
