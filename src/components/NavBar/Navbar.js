@@ -23,7 +23,9 @@ class NavBar extends Component {
         <div className="menu-toggle" onClick={this.toggleMenu}>
           <i className="fa fa-bars"></i> {/* Hamburger icon */}
         </div>
+        <a href="/" className="logo">
         <img src={logo} alt="logo" className="logo" />
+        </a>
         <div className="nav-links">
           <ul>
             <li className="dropdown">
@@ -66,14 +68,14 @@ class NavBar extends Component {
                 <a href="#">Link 3</a>
               </div>
             </li>
-            <li className="dropdown">
+            {/* <li className="dropdown">
               <a href="#">Gifts</a>
               <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="search">
