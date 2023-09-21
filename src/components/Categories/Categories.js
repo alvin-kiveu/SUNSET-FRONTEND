@@ -9,6 +9,7 @@ class Categories extends Component {
   };
 
   render() {
+    
     const categories = [
       {
         name: "Wine",
